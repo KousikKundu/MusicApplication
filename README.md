@@ -67,8 +67,8 @@ Build a system to search for music, show list of music titles, bookmark music, c
   1. Building a server in Spring Boot to facilitate CRUD operation over music, playlist and bookmarked resources stored in MongoDB
   2. Writing Swagger Documentation
   3. Build a Producer for RabbitMQ which
-    - 1. Produces events like what user bookmarked
-    - 2. What music he added in playlists
+    - Produces events like what user bookmarked
+    - What music he added in playlists
   4. Write Test Cases
   5. Write CI Configuration
   6. Dockerize the application
@@ -76,7 +76,7 @@ Build a system to search for music, show list of music titles, bookmark music, c
 
 ### Building a MuzixRecommenderSystem
   1. Building a Consumer for RabbitMQ
-    - 1. On a new event generated Update the recommendations in the system
+    - On a new event generated Update the recommendations in the system
   2. Build an API to get Recommendations
   3. Writing Swagger Documentation
   4. Write Test Cases
