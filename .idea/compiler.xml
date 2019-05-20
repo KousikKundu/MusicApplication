@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="accountmanager" />
+        <module name="eurekaserverdemo" />
+        <module name="muzixmanager" />
+        <module name="muzixrecommendersystem" />
+        <module name="orchestrationservice" />
+        <module name="zuulservice" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="accountmanager" target="1.8" />
+      <module name="eurekaserverdemo" target="1.8" />
+      <module name="muzix" target="1.8" />
+      <module name="muzixmanager" target="1.8" />
+      <module name="muzixrecommendersystem" target="1.8" />
+      <module name="orchestrationservice" target="1.8" />
+      <module name="zuulservice" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="accountmanager" options="-parameters" />
+      <module name="eurekaserverdemo" options="-parameters" />
+      <module name="muzixmanager" options="-parameters" />
+      <module name="muzixrecommendersystem" options="-parameters" />
+      <module name="orchestrationservice" options="-parameters" />
+      <module name="zuulservice" options="-parameters" />
+    </option>
+  </component>
+</project>

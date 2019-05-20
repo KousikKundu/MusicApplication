@@ -1,0 +1,24 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>LogIn</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <form class="my-form">
+      <mat-form-field>
+        <mat-label class="label">UserName</mat-label>
+        <mat-icon matPrefix>person</mat-icon>
+        <input id="username" name="username" class="matInputdata" matInput [(ngModel)]="user.userName" required />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label class="label">Password</mat-label>
+        <mat-icon matPrefix>lock</mat-icon>
+        <input id="password" type="password" name="password" class="matInputdata" matInput [(ngModel)]="user.password" required />
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+      <button class="login-button" mat-raised-button color="accent" (click)="login()">Login</button>
+    <button class="register-button" mat-raised-button color="accent" [routerLink]="['/register']">Register</button>
+  </mat-card-actions>
+</mat-card>

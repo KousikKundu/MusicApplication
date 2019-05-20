@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/accountmanager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eurekaserverdemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/muzixmanager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/muzixrecommendersystem" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orchestrationservice" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuulservice" charset="UTF-8" />
+  </component>
+</project>

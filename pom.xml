@@ -36,6 +36,9 @@
 		<module>accountmanager</module>
 		<module>muzixmanager</module>
 		<module>muzixrecommendersystem</module>
+		<module>eurekaserverdemo</module>
+		<module>orchestrationservice</module>
+		<module>zuulservice</module>
 	</modules>
 
 </project>

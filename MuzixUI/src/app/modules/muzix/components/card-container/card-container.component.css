@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #222121;
+  }
+  
+  .mat-form-field {
+    padding-left: 155vh;
+    padding-top: 10px;
+    color: #fff;
+  }
+
+  .input {
+    color: #fff;
+  }
+
+  .mat-form-field-prefix .mat-icon, .mat-form-field-suffix .mat-icon {
+    font-size: 100%;
+    line-height: 1.125;
+}
+
+.mat-icon {
+  width: 6vw;
+}
+  
+  .mat-form-field-appearance-outline .mat-form-field-infix {
+    color: #fff;
+  }
+  
+  
+  
+  
