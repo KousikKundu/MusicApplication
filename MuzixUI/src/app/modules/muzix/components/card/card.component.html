@@ -6,4 +6,31 @@
 
   <img   mat-card-image class="image" [src]="track.artist.image.text" alt="Photo of a Shiba Inu">
 
+  <mat-card-actions class="button">
+    <button *ngIf="!wishData" mat-mini-fab class="addbutton" matTooltip="Add to WishList" (click)="addMyTrack(track)">
+      <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+    </button>
+
+    <button *ngIf=wishData mat-mini-fab class="deletebutton" matTooltip="delet from WishList" (click)="deleteTrack(track)">
+      <i class="material-icons">delete</i>
+    </button>
+
+    <button mat-mini-fab class="mat-fab" matTooltip="Play">
+      <mat-icon>
+        <a [href]="track.url">
+            <i class="material-icons">play_circle_filled_white</i>
+        </a>
+      </mat-icon>
+    </button>
+
+
+    <button *ngIf=wishData mat-mini-fab class="updatebutton" matTooltip="update comments" (click)="addComments()">
+        <i class="material-icons">
+            create
+            </i>
+      </button>
+
+
+  </mat-card-actions>
+
   </mat-card>

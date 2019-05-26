@@ -30,9 +30,9 @@ export class RegisterComponent implements OnInit {
         this.matSanckBar.open("Successfully Registered", " ", {
           duration:1000
         });
-        //this.authenticationService.saveUser(this.user).subscribe( saveData => {
-       //   console.log('saveData',saveData);
-       // });
+        this.authenticationService.saveUser(this.user).subscribe( saveData => {
+         console.log('saveData',saveData);
+       });
         this.router.navigate(["/login"]);
       }
     },

@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>muzixrecommendersystem</artifactId>
-        <packaging>jar</packaging>
+	<packaging>jar</packaging>
 	<name>MuzixRecommenderSystem</name>
 	<description>Boilerplate for MuzixRecommenderSystem</description>
 
@@ -17,7 +17,10 @@
       		<version>1.0</version>
    	</parent>
 	<dependencies>
-		<!--Add project specific dependencies here  -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
 	</dependencies>
 
 	<build>

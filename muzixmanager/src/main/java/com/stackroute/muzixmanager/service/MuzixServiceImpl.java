@@ -1,11 +1,13 @@
 package com.stackroute.muzixmanager.service;
 
+import com.stackroute.muzixmanager.config.Producer;
 import com.stackroute.muzixmanager.exception.TrackAlreadyExistsException;
 import com.stackroute.muzixmanager.exception.TrackNotFoundException;
 import com.stackroute.muzixmanager.exception.UserAlreadyExistsException;
 import com.stackroute.muzixmanager.model.Track;
 import com.stackroute.muzixmanager.model.User;
 import com.stackroute.muzixmanager.repository.MuzixRepository;
+import com.stackroute.rabbitmq.domain.UserDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,52 +18,55 @@ import java.util.List;
 public class MuzixServiceImpl implements MuzixService {
 
     private MuzixRepository muzixRepository;
+    private Producer producer;
 
     @Autowired
-    public MuzixServiceImpl(MuzixRepository muzixRepository) {
+    public MuzixServiceImpl(MuzixRepository muzixRepository, Producer producer) {
         this.muzixRepository = muzixRepository;
+        this.producer = producer;
     }
 
     @Override
     public User saveUserTrackToPlayList(Track track, String userName) throws TrackAlreadyExistsException {
         User fetchedUserObj = muzixRepository.findByUserName(userName);
-
+        System.out.println("playlist user " +fetchedUserObj.getUserName());
         List<Track> fetchedTracks = fetchedUserObj.getTrackList();
-
+       // System.out.println("playlist user alreday have " +fetchedTracks.size());
         if(fetchedTracks != null) {
 
             for(Track trackObj : fetchedTracks){
-
-                if(trackObj.getTrackId().equals(track.getTrackId())){
+                System.out.println("track id of the existing track " +trackObj.getTrackId());
+                System.out.println("track id of the incoming track " +track.getTrackId());
+                if(trackObj.getTrackId()!= null && trackObj.getTrackId().equals(track.getTrackId())){
                     throw new TrackAlreadyExistsException();
                 }
             }
 
             fetchedTracks.add(track);
             fetchedUserObj.setTrackList(fetchedTracks);
-            /*UserDTO userDTO = new UserDTO();
+            UserDTO userDTO = new UserDTO();
             userDTO.setUserName(userName);
             userDTO.setEmail(fetchedUserObj.getEmail());
             List list = new ArrayList();
             list.add(fetchedTracks);
-            userDTO.setTrackList(list);*/
+            userDTO.setTrackList(list);
             muzixRepository.save(fetchedUserObj);
-           // producer.sendToRabbitMqTrackObj(userDTO);
+            producer.sendToRabbitMqTrackObj(userDTO);
         }else {
 
             fetchedTracks = new ArrayList<Track>();
             fetchedTracks.add(track);
             fetchedUserObj.setTrackList(fetchedTracks);
 
-            /*UserDTO userDTO = new UserDTO();
+            UserDTO userDTO = new UserDTO();
             userDTO.setUserName(userName);
             userDTO.setEmail(fetchedUserObj.getEmail());
             List list = new ArrayList();
             list.add(fetchedTracks);
-            userDTO.setTrackList(list);*/
+            userDTO.setTrackList(list);
 
             muzixRepository.save(fetchedUserObj);
-            //producer.sendToRabbitMqTrackObj(userDTO);
+            producer.sendToRabbitMqTrackObj(userDTO);
         }
         return fetchedUserObj;
     }

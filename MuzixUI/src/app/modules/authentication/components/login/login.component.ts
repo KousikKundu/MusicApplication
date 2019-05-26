@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
         this.matSnackBar.open(data.body["message"], " ", {
           duration:1000
         });
-        this.router.navigate(["/India"]);
+        this.router.navigate(["/home"]);
       }
     },
     error =>{
