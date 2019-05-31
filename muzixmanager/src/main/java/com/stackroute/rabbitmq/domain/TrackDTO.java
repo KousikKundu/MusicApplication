@@ -10,12 +10,12 @@ public class TrackDTO {
   private String trackUrl;
   private String trackListeners;
   private String comments;
-  private Artist artist;
+  private ArtistDTO artist;
 
   public TrackDTO() {
   }
 
-  public TrackDTO(String trackId, String trackNamne, String trackUrl, String trackListeners, String comments, Artist artist) {
+  public TrackDTO(String trackId, String trackNamne, String trackUrl, String trackListeners, String comments, ArtistDTO artist) {
     this.trackId = trackId;
     this.trackNamne = trackNamne;
     this.trackUrl = trackUrl;
@@ -64,11 +64,11 @@ public class TrackDTO {
     this.comments = comments;
   }
 
-  public Artist getArtist() {
+  public ArtistDTO getArtist() {
     return artist;
   }
 
-  public void setArtist(Artist artist) {
+  public void setArtist(ArtistDTO artist) {
     this.artist = artist;
   }
 

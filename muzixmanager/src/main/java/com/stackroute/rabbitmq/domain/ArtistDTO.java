@@ -8,12 +8,12 @@ public class ArtistDTO {
   private int artistId;
   private String artistNamne;
   private String url;
-  private Image image;
+  private ImageDTO image;
 
   public ArtistDTO() {
   }
 
-  public ArtistDTO(int artistId, String artistNamne, String url, Image image) {
+  public ArtistDTO(int artistId, String artistNamne, String url, ImageDTO image) {
     this.artistId = artistId;
     this.artistNamne = artistNamne;
     this.url = url;
@@ -44,11 +44,11 @@ public class ArtistDTO {
     this.url = url;
   }
 
-  public Image getImage() {
+  public ImageDTO getImage() {
     return image;
   }
 
-  public void setImage(Image image) {
+  public void setImage(ImageDTO image) {
     this.image = image;
   }
 
