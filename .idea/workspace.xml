@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="453f3b4f-be31-44a3-9a71-e331119a4f73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/muzixmanager/src/test/java/com/stackroute/muzixmanager/controller/MuzixControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/muzixmanager/src/test/java/com/stackroute/muzixmanager/controller/MuzixControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/muzixmanager/src/main/java/com/stackroute/muzixmanager/service/MuzixServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/muzixmanager/src/main/java/com/stackroute/muzixmanager/service/MuzixServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/accountmanager/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,11 +19,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/muzixmanager/src/test/java/com/stackroute/muzixmanager/controller/MuzixControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-131">
-              <caret line="119" column="59" selection-start-line="119" selection-start-column="59" selection-end-line="119" selection-end-column="59" />
+            <state relative-caret-position="124">
+              <caret line="136" column="45" lean-forward="true" selection-start-line="136" selection-start-column="45" selection-end-line="136" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/muzixmanager/src/test/java/com/stackroute/muzixmanager/service/MuzixServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/muzixmanager/src/main/java/com/stackroute/muzixmanager/service/MuzixServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="55">
+              <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,7 +111,6 @@
         <option value="$PROJECT_DIR$/muzixmanager/pom.xml" />
         <option value="$PROJECT_DIR$/muzixmanager/src/main/java/com/stackroute/muzixmanager/config/MessagingConfiguration.java" />
         <option value="$PROJECT_DIR$/muzixmanager/src/main/java/com/stackroute/muzixmanager/config/Producer.java" />
-        <option value="$PROJECT_DIR$/muzixmanager/src/main/java/com/stackroute/muzixmanager/service/MuzixServiceImpl.java" />
         <option value="$PROJECT_DIR$/muzixrecommendersystem/pom.xml" />
         <option value="$PROJECT_DIR$/muzixrecommendersystem/src/main/java/com/stackroute/muzixrecommendersystem/config/MessagingConfiguration.java" />
         <option value="$PROJECT_DIR$/muzixrecommendersystem/src/main/java/com/stackroute/muzixrecommendersystem/Model/Artist.java" />
@@ -107,6 +127,7 @@
         <option value="$PROJECT_DIR$/muzixmanager/src/main/java/com/stackroute/rabbitmq/domain/TrackDTO.java" />
         <option value="$PROJECT_DIR$/muzixmanager/src/main/java/com/stackroute/rabbitmq/domain/ArtistDTO.java" />
         <option value="$PROJECT_DIR$/muzixmanager/src/test/java/com/stackroute/muzixmanager/controller/MuzixControllerTest.java" />
+        <option value="$PROJECT_DIR$/muzixmanager/src/main/java/com/stackroute/muzixmanager/service/MuzixServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -147,61 +168,6 @@
               <item name="kouskund-muzix-java-boilerplate" type="462c0819:PsiDirectoryNode" />
               <item name="muzixmanager" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="muzix" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kouskund-muzix-java-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="muzixmanager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="muzix" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kouskund-muzix-java-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="muzixmanager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="stackroute" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="muzix" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kouskund-muzix-java-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="muzixmanager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="stackroute" type="462c0819:PsiDirectoryNode" />
-              <item name="muzixmanager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="muzix" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kouskund-muzix-java-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="muzixmanager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="stackroute" type="462c0819:PsiDirectoryNode" />
-              <item name="muzixmanager" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="muzix" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kouskund-muzix-java-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="muzixmanager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="stackroute" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="muzix" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kouskund-muzix-java-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="muzixmanager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -229,7 +195,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="muzixmanager" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="muzix" type="b2602c69:ProjectViewProjectNode" />
@@ -290,7 +256,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559271291683" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559272034370" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -321,7 +287,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.MuzixServiceTest.testSaveUserTrackSuccess">
     <configuration name="MuzixControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="muzixmanager" />
       <extension name="coverage">
@@ -337,8 +303,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MuzixServiceTest.testSaveUserTrackSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="muzixmanager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.stackroute.muzixmanager.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.stackroute.muzixmanager.service" />
+      <option name="MAIN_CLASS_NAME" value="com.stackroute.muzixmanager.service.MuzixServiceTest" />
+      <option name="METHOD_NAME" value="testSaveUserTrackSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MuzixServiceTest.testSaveUserTrackSuccess" />
         <item itemvalue="JUnit.MuzixControllerTest" />
       </list>
     </recent_temporary>
@@ -360,29 +343,38 @@
     <history-entry file="MuzixControllerTest - 2019.05.31 at 02h 50m 39s.xml">
       <configuration name="MuzixControllerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MuzixControllerTest - 2019.05.31 at 02h 55m 04s.xml">
+      <configuration name="MuzixControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MuzixServiceTest_testSaveUserTrackSuccess - 2019.05.31 at 03h 01m 50s.xml">
+      <configuration name="MuzixServiceTest.testSaveUserTrackSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MuzixServiceTest_testSaveUserTrackSuccess - 2019.05.31 at 03h 06m 39s.xml">
+      <configuration name="MuzixServiceTest.testSaveUserTrackSuccess" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="24" width="1538" height="702" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30738255" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30738255" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3292683" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.3292683" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -392,33 +384,6 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30738255" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -435,16 +400,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/orchestrationservice/src/main/java/com/example/orchestrationservice/controller/OrchestrationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/orchestrationservice/src/main/java/com/example/orchestrationservice/OrchestrationserviceApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -625,16 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/muzixmanager/src/main/java/com/stackroute/muzixmanager/service/MuzixServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="122" column="5" selection-start-line="117" selection-start-column="4" selection-end-line="122" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/muzixrecommendersystem/src/main/java/com/stackroute/muzixrecommendersystem/service/MuzixRecommendedServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -777,8 +722,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/muzixmanager/src/test/java/com/stackroute/muzixmanager/controller/MuzixControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-131">
-          <caret line="119" column="59" selection-start-line="119" selection-start-column="59" selection-end-line="119" selection-end-column="59" />
+        <state relative-caret-position="124">
+          <caret line="136" column="45" lean-forward="true" selection-start-line="136" selection-start-column="45" selection-end-line="136" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/muzixmanager/src/test/java/com/stackroute/muzixmanager/service/MuzixServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/muzixmanager/src/main/java/com/stackroute/muzixmanager/service/MuzixServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -51,6 +51,7 @@ public class MuzixServiceImpl implements MuzixService {
             list.add(fetchedTracks);
             userDTO.setTrackList(list);
             muzixRepository.save(fetchedUserObj);
+            if(producer!=null)
             producer.sendToRabbitMqTrackObj(userDTO);
         }else {
 
@@ -66,6 +67,7 @@ public class MuzixServiceImpl implements MuzixService {
             userDTO.setTrackList(list);
 
             muzixRepository.save(fetchedUserObj);
+            if(producer!=null)
             producer.sendToRabbitMqTrackObj(userDTO);
         }
         return fetchedUserObj;
