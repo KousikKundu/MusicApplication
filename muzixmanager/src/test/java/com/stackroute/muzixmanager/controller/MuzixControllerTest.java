@@ -72,7 +72,7 @@ public class MuzixControllerTest {
     @Test
     public void testSaveTrackSuccess() throws Exception {
         when(muzixService.saveUserTrackToPlayList(any(),eq(user.getUserName()))).thenThrow(TrackAlreadyExistsException.class);
-        mockMvc.perform(post("/api/usertrackservice/user/{userName}/track" , user.getUserName())
+        mockMvc.perform(post("/sbaapi/v1/muzixmanagerservice/user/{userName}/track" , user.getUserName())
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(jsonToString(track))).andExpect(status().isConflict()).andDo(print());
 
@@ -83,7 +83,7 @@ public class MuzixControllerTest {
     @Test
     public void testSaveTrackFailure() throws Exception {
         when(muzixService.saveUserTrackToPlayList(any(),eq(user.getUserName()))).thenReturn(user);
-        mockMvc.perform(post("/api/usertrackservice/user/{userName}/track" , user.getUserName())
+        mockMvc.perform(post("/sbaapi/v1/muzixmanagerservice/user/{userName}/track" , user.getUserName())
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(jsonToString(track))).andExpect(status().isCreated()).andDo(print());
 
@@ -94,7 +94,7 @@ public class MuzixControllerTest {
     @Test
     public void testUpdateCommentSuccess() throws Exception {
         when(muzixService.updateCommentForTrack(track.getComments(),track.getTrackId(),user.getUserName())).thenReturn(user);
-        mockMvc.perform(patch("/api/usertrackservice/user/{userName}/track" , user.getUserName())
+        mockMvc.perform(patch("/sbaapi/v1/muzixmanagerservice/user/{userName}/track" , user.getUserName())
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(jsonToString(track))).andExpect(status().isOk()).andDo(print());
 
@@ -106,7 +106,7 @@ public class MuzixControllerTest {
     @Test
     public void testDeleteUserTrack() throws Exception {
         when(muzixService.deleteUserTrackFromPlayList(user.getUserName(),track.getTrackId())).thenReturn(user);
-        mockMvc.perform(delete("/api/usertrackservice/user/{userName}/{trackID}" , user.getUserName(),track.getTrackId())
+        mockMvc.perform(delete("/sbaapi/v1/muzixmanagerservice/user/{userName}/{trackID}" , user.getUserName(),track.getTrackId())
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(jsonToString(track))).andExpect(status().isOk()).andDo(print());
 
@@ -117,7 +117,7 @@ public class MuzixControllerTest {
     @Test
     public void testGetAllTracksFromWishList() throws Exception {
         when(muzixService.getAllUserTrackFromPlayList(user.getUserName())).thenReturn(trackList);
-        mockMvc.perform(get("/api/usertrackservice/user/{userName}/track" , user.getUserName())
+        mockMvc.perform(get("/sbaapi/v1/muzixmanagerservice/user/{userName}/track" , user.getUserName())
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(jsonToString(track))).andExpect(status().isOk()).andDo(print());
 
