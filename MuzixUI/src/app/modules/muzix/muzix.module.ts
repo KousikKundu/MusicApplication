@@ -12,11 +12,12 @@ import { InterceptorService } from './interceptor.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { MuzixService } from 'src/app/modules/muzix/muzix.service';
+import { RecommendedComponent } from './components/recommended/recommended.component';
 
 
 
 @NgModule({
-  declarations: [CardComponent, CardContainerComponent, HeaderComponent, FooterComponent, DialogComponent, PlayListComponent],
+  declarations: [CardComponent, CardContainerComponent, HeaderComponent, FooterComponent, DialogComponent, PlayListComponent, RecommendedComponent],
   imports: [
     CommonModule,
     BrowserAnimationsModule,
@@ -28,7 +29,8 @@ import { MuzixService } from 'src/app/modules/muzix/muzix.service';
     CardContainerComponent,
     HeaderComponent, 
     AppRoutingModule,
-    FooterComponent
+    FooterComponent,
+    RecommendedComponent
 
   ],
   providers: [

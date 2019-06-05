@@ -10,6 +10,7 @@
 
 	<groupId>com.stackroute</groupId>
 	<artifactId>eurekaserverdemo</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>eurekaserverdemo</name>
 	<description>Demo project for Spring Boot</description>
 

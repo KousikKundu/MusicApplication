@@ -8,7 +8,8 @@ services:
       - 15672:15672
         
   accountManager:
-    image: triplekdock/accountmanagerservice:v1
+    image: accountmanagersba
+    build: accountmanager/
     restart: always
     network_mode: host
     container_name: accountmanagersbaCon
@@ -22,7 +23,8 @@ services:
         test: "exit 0"
       
   muzixManager:
-    image: triplekdock/muzixmanagerservice:v1
+    image: muzixmanagerservicesba
+    build: muzixmanager/
     restart: always
     network_mode: host
     container_name: muzixmanagersbaCon
@@ -36,7 +38,8 @@ services:
         test: "exit 0"
 
   muzixRecommendedService:
-    image: triplekdock/recommendedservicesba:v1
+    image: muzixrecommendedservicesba
+    build: muzixrecommendersystem/
     restart: always
     network_mode: host
     container_name: muzixrecommendedsbaCon
@@ -47,7 +50,8 @@ services:
       - rabbitmq
 
   eurekaServer:
-    image: triplekdock/eurekaservicesba:v1
+    image: eurekaserversba
+    build: eurekaserverdemo/
     restart: always
     network_mode: host
     container_name: eurekaServerCon
@@ -57,7 +61,8 @@ services:
         test: "exit 0"
 
   orchestrationServer:
-    image: triplekdock/orchestrationservicesba:v1
+    image: orchestrationservicesba
+    build: orchestrationservice/
     restart: always
     network_mode: host
     container_name: orchestrationServerCon
@@ -69,7 +74,8 @@ services:
         test: "exit 0"
 
   zuulService:
-    image: triplekdock/zullservicesba:v1
+    image: zullservicesba
+    build: zuulservice/
     restart: always
     network_mode: host
     container_name: zuulServerCon
@@ -92,7 +98,8 @@ services:
 
 
   angular:
-    image: triplekdock/muzixuisba:v1
+    image: muzixuisba
+    build: MuzixUI/
     network_mode: host
     container_name: muzixUiCon
     ports:
