@@ -43,7 +43,6 @@ public class UserAccountServiceTest {
     }
     @Test
     public void testFindByUserNameAndPassword() throws UserNotFoundException {
-
         Mockito.when(userRepository.findByUserNameAndPassword(user.getUserName(),user.getPassword())).thenReturn(user);
         UserAccount fetchedUser = userService.findByUserNameAndPassword(user.getUserName(),user.getPassword());
         Assert.assertEquals(user, fetchedUser);
