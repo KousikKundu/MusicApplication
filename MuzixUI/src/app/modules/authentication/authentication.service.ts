@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Output,EventEmitter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 export const USER_NAME="userName";
 export const TOKEN_NAME= "jwt_token";
@@ -7,6 +7,9 @@ export const TOKEN_NAME= "jwt_token";
   providedIn: 'root'
 })
 export class AuthenticationService {
+
+  @Output()
+  logoutFlag = new EventEmitter ();
 
   private springEndPointRegister: string;
   private springEndPointSave: string;
@@ -33,6 +36,7 @@ export class AuthenticationService {
   loginUser(newUser){
     const url = this.springLoginEndpoint;
     sessionStorage.setItem(USER_NAME,newUser.userName);
+    this.logoutFlag.emit(true);
     return this.httpClient.post(url, newUser, {observe: "response"});
   }
   getToken() {
@@ -52,6 +56,7 @@ export class AuthenticationService {
     sessionStorage.clear();
     localStorage.removeItem(TOKEN_NAME);
     localStorage.clear();
+    this.logoutFlag.emit(false);
     console.log('logged out');
   }
 }

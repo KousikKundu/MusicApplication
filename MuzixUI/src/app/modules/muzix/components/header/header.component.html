@@ -5,7 +5,7 @@
      
       <button class="mat-btn-wishlist" [routerLink]="['/wishList']"  mat-button>PalyList</button>
       <button class="mat-btn-wishlist" [routerLink]="['/recommendedList']"  mat-button>Recommended List</button>
-      <button class="mat-btn-logout" (click)="logout()"  mat-button>LogOut</button>
+      <button *ngIf=logoutFlag class="mat-btn-logout" (click)="logout()"  mat-button>LogOut</button>
 
   </mat-toolbar-row>
 </mat-toolbar>

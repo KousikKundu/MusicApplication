@@ -8,8 +8,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  logoutFlag:boolean;
 
-  constructor(private authService: AuthenticationService, private route: Router) { }
+  constructor(private authService: AuthenticationService, private route: Router) { 
+    authService.logoutFlag.subscribe(logFlag => {
+      console.log('flag : ' , logFlag);
+      this.logoutFlag=logFlag});
+  }
 
   ngOnInit() {
   }
