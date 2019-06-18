@@ -92,7 +92,8 @@ services:
 
 
   angular:
-    image: triplekdock/muzixuisba:v1
+    image: muzixuisbav2
+    build: MuzixUI/
     network_mode: host
     container_name: muzixUiCon
     ports:

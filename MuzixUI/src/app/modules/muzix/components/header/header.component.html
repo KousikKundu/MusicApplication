@@ -2,9 +2,9 @@
 
   <mat-toolbar-row>
       <img class="image-class" src="assets\image\muzixImage.png">
-     
-      <button class="mat-btn-wishlist" [routerLink]="['/wishList']"  mat-button>PalyList</button>
-      <button class="mat-btn-wishlist" [routerLink]="['/recommendedList']"  mat-button>Recommended List</button>
+      <button *ngIf=logoutFlag class="mat-btn-wishlist" [routerLink]="['/home']"  mat-button>Home</button>
+      <button *ngIf=logoutFlag  class="mat-btn-wishlist" [routerLink]="['/wishList']"  mat-button>PalyList</button>
+      <button *ngIf=logoutFlag class="mat-btn-wishlist" [routerLink]="['/recommendedList']"  mat-button>Recommended List</button>
       <button *ngIf=logoutFlag class="mat-btn-logout" (click)="logout()"  mat-button>LogOut</button>
 
   </mat-toolbar-row>
